@@ -38,16 +38,9 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
-.sobre-section {
-    height: 100%;
-    padding-top: 100px;
-    text-align: center;
-    background: #eee;
-}
-
 .artigo-section {
     height: 100%;
-    padding-top: 100px;
+    padding-top: 25px;
     text-align: center;
     background: #fff;
 }
@@ -65,3 +58,5 @@ of those sections to manage the look and feel of the site. */
     text-align: center;
     background: #fff;
 }
+
+.no-margin-top {margin-top: 0px !important;}
