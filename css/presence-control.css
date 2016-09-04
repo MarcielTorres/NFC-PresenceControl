@@ -1,0 +1,27 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+@media(min-width:767px) {
+    .navbar {
+        padding: 20px 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .top-nav-collapse {
+        padding: 0;
+    }
+}
+
+.default-section  { height: 100%; text-align: center; padding-top: 35px; background: #fff; }
+.gray-section { background: #eee !important; }
+.intro-section { padding-top: 100px !important; }
+.no-margin-top {margin-top: 0px !important;}
