@@ -93,13 +93,13 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Sobre</h1>
-					<ul id="tabs" class="nav nav-tabs" data-tabs="tabs" style="padding-bottom:0;">
+					<ul class="nav nav-tabs navstyle" data-tabs="tabs" style="padding-bottom:0;">
 						<li class="active"><a href="#artigo-sobre-projeto" data-toggle="tab">O Projeto</a></li>
 						<li><a href="#artigo-introducao" data-toggle="tab">Introdução</a></li>
 						<li><a href="#artigo-objetivos" data-toggle="tab">Objetivos</a></li>
 						<li><a href="#artigo-metodologia" data-toggle="tab">Metodologia</a></li>
 					</ul>
-					<div id="my-tab-content" class="tab-content" style="background:#FFF; min-height:150px; margin-top:0; border: 1px solid #CECECE; border-top:0px; padding: 15px;">
+					<div class="tab-content" style="background:#FFF; min-height:150px; margin-top:0; border: 1px solid #CECECE; border-top:0px; padding: 15px;">
 						<div class="tab-pane active" id="artigo-sobre-projeto">
 							<h2 class="no-margin-top text-left">Sobre o Projeto</h2>
 							<p class="text-left">Esse projeto de pesquisa tem como objetivo utilizar a tecnologia Near Field Communication (NFC) para o controle de presenças. Além disso, visa aprofundar os conhecimentos nessa tecnologia emergente que vem sendo adotada em vários dispositivos. Nos últimos anos foram desenvolvidas muitas aplicações utilizando NFC, não apenas para dispositivos móveis, muitas envolvem diversos elementos presentes em nosso cotidiano. Através desse projeto também será possível analisar os campos de aplicação para a tecnologia NFC bem como diversos projetos desenvolvidos nessa área. Como parte do objetivo principal dessa proposta, será possível validar a utilização do NFC para o controle de presenças através de um protótipo desenvolvido especificamente para este fim, utilizando, além do NFC, tecnologias recentes para o desenvolvimento de software.</p>
@@ -174,6 +174,60 @@
             <div class="row">
                 <div class="col-lg-12">
                     <h1>Desenvolvimento</h1>
+					<ul class="nav nav-tabs navstyle" data-tabs="tabs" style="padding-bottom:0;">
+						<li class="active"><a href="#desenvolvimento-premissas" data-toggle="tab">Premissas</a></li>
+						<li><a href="#desenvolvimento-regra" data-toggle="tab">Regra de Negócio</a></li>
+						<li><a href="#desenvolvimento-webservices" data-toggle="tab">Web Services</a></li>
+						<li><a href="#desenvolvimento-dados" data-toggle="tab">Armazenamento de Dados</a></li>
+						<li><a href="#desenvolvimento-app-client" data-toggle="tab">NFC Host Card Emulation (HCE)</a></li>
+						<li><a href="#desenvolvimento-app-server" data-toggle="tab">NFC Reader</a></li>
+						<li><a href="#desenvolvimento-website" data-toggle="tab">WebSite Estático</a></li>
+					</ul>
+					<div class="tab-content" style="background:#FFF; min-height:150px; margin-top:0; border: 1px solid #CECECE; border-top:0px; padding: 15px;">
+						<div class="tab-pane active" id="desenvolvimento-premissas">
+							<h2 class="no-margin-top text-left">Premissas</h2>
+							<p class="text-left">
+							Algumas premissas devem ser levadas em consideração para elaboração e desenvolvimento do software proposto:
+							<ul>
+								<li class="text-left"><strong>Versão do Sistema Operacional Android: </strong> 
+									<p class="text-left">A versão do Sistema Operacional Android deve ser
+									obrigatoriamente 4.4, pois os dispositivos que estavam
+									disponíveis para testes possuem essa versão. Porém os
+									aplicativos devem funcionar a partir da versão 4.1 para os
+									dispositivos móveis que possuírem suporte à tecnologia NFC;</p>
+								</li>
+								<li class="text-left"><strong>Aplicativos com acesso irrestrito à internet: </strong> 
+									<p class="text-left">Os aplicativos deverão possuir conectividade irrestrita com
+									a internet, pois os dois aplicativos irão se comunicar com o WebService;</p>
+								</li>
+							</ul>
+							</p>
+						</div>
+						<div class="tab-pane" id="desenvolvimento-regra">
+							<h2 class="no-margin-top text-left">Detalhamento da Regra de Negócio</h2>
+							<p class="text-left"></p>
+						</div>
+						<div class="tab-pane" id="desenvolvimento-webservices">
+							<h2 class="no-margin-top text-left">Web Services</h2>
+							<p class="text-left"></p>
+						</div>
+						<div class="tab-pane" id="desenvolvimento-dados">
+							<h2 class="no-margin-top text-left">Armazenamento de Dados</h2>
+							<p class="text-left"></p>
+						</div>
+						<div class="tab-pane" id="desenvolvimento-app-client">
+							<h2 class="no-margin-top text-left">Aplicativo Cliente - NFC Host Card Emulation (HCE)</h2>
+							<p class="text-left"></p>
+						</div>
+						<div class="tab-pane" id="desenvolvimento-app-server">
+							<h2 class="no-margin-top text-left">Aplicativo Receptor - NFC Reader</h2>
+							<p class="text-left"></p>
+						</div>
+						<div class="tab-pane" id="desenvolvimento-website">
+							<h2 class="no-margin-top text-left">WebSite Estático</h2>
+							<p class="text-left"></p>
+						</div>
+					</div>
                 </div>
             </div>
         </div>
@@ -191,7 +245,7 @@
 
 	<script type="text/javascript">
     jQuery(document).ready(function ($) {
-        $('#tabs').tab();
+        $('.navstyle').tab();
     });
 </script>  
 	
