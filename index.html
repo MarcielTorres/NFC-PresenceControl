@@ -169,7 +169,7 @@
     </section>
 	
 	<!-- Desenvolvimento Section -->
-    <section id="desenvolvimento" class="default-section gray-section ">
+    <section id="desenvolvimento" class="default-section gray-section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -221,11 +221,14 @@
 						<div class="tab-pane" id="desenvolvimento-webservices">
 							<h2 class="no-margin-top text-left">Web Services</h2>
 							<p class="text-left">O projeto visa ser desenvolvido de forma modular, logo toda a regra de negócio será centralizada e controlada por um único módulo, o Webservice. O Webservice proposto será responsável por armazenar todas as regras de negócio necessárias (conforme descritas no item anterior), fazendo com que a lógica do software fique centralizada em um único ponto, não levando nenhuma condição para os outros módulos propostos. Toda a comunicação do Webservice com os demais módulos se dará através do formato de mensagens JSON. </p>
-							<p class="text-left">Esse projeto de Webservice foi estruturado utilizando a tecnologia WCF que significa Windows Communication Foundation [20], essa tecnologia serve para criação de modos de comunicação entre serviços distintos. Ela está presente no framework de desenvolvimento de aplicações da Microsoft denominado .NET Framework. Para o desenvolvimento dessa aplicação, a linguagem de programação adotada foi o C# (C Sharp), essa linguagem de programação também está disponível não framework especificado acima.</p>
+							<p class="text-left">Esse projeto de Webservice foi estruturado utilizando a tecnologia WCF que significa Windows Communication Foundation, essa tecnologia serve para criação de modos de comunicação entre serviços distintos. Ela está presente no framework de desenvolvimento de aplicações da Microsoft denominado .NET Framework. Para o desenvolvimento dessa aplicação, a linguagem de programação adotada foi o C# (C Sharp), essa linguagem de programação também está disponível não framework especificado acima.</p>
 						</div>
 						<div class="tab-pane" id="desenvolvimento-dados">
 							<h2 class="no-margin-top text-left">Armazenamento de Dados</h2>
-							<p class="text-left"></p>
+							<p class="text-left">As informações dos Eventos, Inscritos e Controle de Presença deverão ser persistidos em banco de dados para posterior consulta e também para auxiliar na validação dos mesmos. Como produto de banco de dados relacional utilizaremos a distribuição Microsoft SQL Server. O produto escolhido para armazenamento de dados não é obrigatoriedade para desenvolvimento do projeto, na verdade é apenas uma questão de ambiente, qualquer base de dados relacional disponível no mercado poderia ser utilizada.</p>
+							<p class="text-center"><img src="img/Diagrama-er.png" alt="Diagrama Entidade Relacionamento - Banco de Dados" class="img-thumbnail"></p>
+							<p class="text-left">Esse modelo básico estrutural do banco de dados foi necessário para manter as informações do projeto, embora seja extremamente simples, o mais importante desse modelo é a maneira como as entidades se relacionam. Para o efetivo controle de presenças, objetivo principal do projeto de pesquisa, são necessárias apenas três entidades: Eventos, Inscrições e Controle de Presença. Conforme foi explicado no detalhamento da regra de negócio, cada uma dessas entidades tem a função de armazenar as informações necessárias.</p>
+							<p class="text-left">No caso de um projeto a ser desenvolvido exclusivamente para o mercado, provavelmente seriam necessárias mais informações e também mais entidades, porém para esse projeto de pesquisa, apenas essas três entidades são o suficiente. O objetivo nessa questão é apenas armazenar de forma estruturada os dados para consultas posteriores.</p>
 						</div>
 						<div class="tab-pane" id="desenvolvimento-app-client">
 							<h2 class="no-margin-top text-left">Aplicativo Cliente - NFC Host Card Emulation (HCE)</h2>
