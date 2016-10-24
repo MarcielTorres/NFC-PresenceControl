@@ -16,6 +16,8 @@
 
     <!-- Custom CSS -->
     <link href="css/presence-control.css" rel="stylesheet">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -223,6 +225,7 @@
 							<h2 class="no-margin-top text-left">Web Services</h2>
 							<p class="text-left">O projeto visa ser desenvolvido de forma modular, logo toda a regra de negócio será centralizada e controlada por um único módulo, o Webservice. O Webservice proposto será responsável por armazenar todas as regras de negócio necessárias (conforme descritas no item anterior), fazendo com que a lógica do software fique centralizada em um único ponto, não levando nenhuma condição para os outros módulos propostos. Toda a comunicação do Webservice com os demais módulos se dará através do formato de mensagens JSON. </p>
 							<p class="text-left">Esse projeto de Webservice foi estruturado utilizando a tecnologia WCF que significa Windows Communication Foundation, essa tecnologia serve para criação de modos de comunicação entre serviços distintos. Ela está presente no framework de desenvolvimento de aplicações da Microsoft denominado .NET Framework. Para o desenvolvimento dessa aplicação, a linguagem de programação adotada foi o C# (C Sharp), essa linguagem de programação também está disponível não framework especificado acima.</p>
+							<p class="text-right"><a href="https://github.com/MarcielTorres/NFCProject-WebService" target="_blank"><i class="fa fa-github" style="font-size:24px; padding-right:5px;"></i>Fork me on GitHub</a></p>
 						</div>
 						<div class="tab-pane" id="desenvolvimento-dados">
 							<div style="display:block; ">
@@ -237,12 +240,14 @@
 							<p class="text-left">A proposta prevê o desenvolvimento de um aplicativo nativo para a plataforma Android que servirá como o cartão de acesso para o controle efetivo de presença, ou seja, esse aplicativo estará com o usuário que está previamente cadastrado em determinado evento, e em uma situação hipotética de caso de uso, estará prestes a chegar nesse evento. Sendo assim esse usuário encostará seu dispositivo no ponto receptor e esse aplicativo irá fornecer as informações necessárias para acesso. Essa é a definição simbólica da utilização do aplicativo.</p>
 							<p class="text-left">A plataforma utilizada para o desenvolvimento do aplicativo foi o Android Studio, e como linguagem de programação nativa do sistema operacional Android, a linguagem Java. Essas definições técnicas relacionadas com o desenvolvimento também valem para o aplicativo receptor. A referência utilizada no início do desenvolvimento foi o livro Beginning NFC: Near Field Communication with Arduino, Android, and PhoneGap, muitas questões com relação ao desenvolvimento com NFC foram esclarecidas com esse livro, todas relacionadas com a prática do desenvolvimento, não tem relação teórica com o projeto de pesquisa.</p>
 							<p class="text-left">Maiores informações sobre o desenvolvimento do aplicativo estão na <a href="https://github.com/MarcielTorres/NFCProject-AndroidClientApp/wiki" target="_blank">wiki</a> do repositório.</p>
+							<p class="text-right"><a href="https://github.com/MarcielTorres/NFCProject-AndroidClientApp/" target="_blank"><i class="fa fa-github" style="font-size:24px; padding-right:5px;"></i>Fork me on GitHub</a></p>
 						</div>
 						<div class="tab-pane" id="desenvolvimento-app-server">
 							<h2 class="no-margin-top text-left">Aplicativo Receptor - NFC Reader</h2>
 							<p class="text-left">As ferramentas utilizadas para o desenvolvimento do aplicativo receptor foram exatamente as mesmas que foram utilizadas para o desenvolvimento do aplicativo cliente. O aplicativo receptor não possui interface gráfica, possui apenas uma tela padrão que emite uma mensagem confirmando ou não a presença do indivíduo.</p>
 							<p class="text-left">Sempre que uma nova tag for descoberta pelo NFC, esse método é chamado automaticamente, pois aqui está a relação com os filtros definidos nas configurações do aplicativo. Mesmo o método tratando a informação como tag, como o padrão definido é para HCE, se for aproximado uma tag NFC padrão não irá funcionar, essa nomenclatura serve apenas para padronizar o código.</p>
 							<p class="text-left">Maiores informações sobre o desenvolvimento do aplicativo estão na <a href="https://github.com/MarcielTorres/NFCProject-AndroidServerApp/wiki" target="_blank">wiki</a> do repositório.</p>
+							<p class="text-right"><a href="https://github.com/MarcielTorres/NFCProject-AndroidServerApp/" target="_blank"><i class="fa fa-github" style="font-size:24px; padding-right:5px;"></i>Fork me on GitHub</a></p>
 						</div>
 						<div class="tab-pane" id="desenvolvimento-website">
 							<h2 class="no-margin-top text-left">WebSite Estático</h2>
@@ -250,6 +255,7 @@
 							<p class="text-left">Como o projeto foi estruturado de forma modular, esse site não poderia ser diferente, ele apenas efetua comunicação com o Webservice e solicita as informações necessárias, sendo assim a regra de negócio continua centralizada. Através desse site é possível, por exemplo, criar um novo evento, essa função está disponível apenas através desse site.</p>
 							<p class="text-left">O desenvolvimento desse recurso foi fundamental para fixar os testes, pois a validação das informações é possível através desse site. Na seção de testes é possível visualizar com mais clareza como esse site foi utilizado e como está enquadrado nessa proposta de pesquisa.</p>
 							<p class="text-left">A única ressalva a ser feita com relação a esse site, é que ele não faz parte da proposta de pesquisa nem do protótipo proposto, ele foi desenvolvido como um extra apenas para validar as informações e auxiliar nos testes. Com isso, é necessário salientar que o projeto funciona perfeitamente sem ele.</p>
+							<p class="text-right"><a href="https://github.com/MarcielTorres/NFCProject-WebService" target="_blank"><i class="fa fa-github" style="font-size:24px; padding-right:5px;"></i>Fork me on GitHub</a></p>
 						</div>
 					</div>
                 </div>
